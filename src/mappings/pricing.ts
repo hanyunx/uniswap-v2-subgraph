@@ -4,9 +4,9 @@ import { BigDecimal, Address, BigInt } from '@graphprotocol/graph-ts/index'
 import { ZERO_BD, factoryContract, ADDRESS_ZERO, ONE_BD } from './helpers'
 
 const WETH_ADDRESS = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
-const USDC_WETH_PAIR = '0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc' // created 10008355
-const DAI_WETH_PAIR = '0xa478c2975ab1ea89e8196811f51a7b7ade33eb11' // created block 10042267
-const USDT_WETH_PAIR = '0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852' // created block 10093341
+const USDC_WETH_PAIR = '0x689dd3612ee388300e7ecc67cb03b10bdc3f6c39'
+const DAI_WETH_PAIR = '0xcca23c14778b5d8bbc703f0a8003e4274919645c'
+const USDT_WETH_PAIR = '0x92b01d1dda5224cc290f0c3ae356c2096e0c1c0e'
 
 // dummy for testing
 export function getEthPriceInUSD(): BigDecimal {
@@ -56,7 +56,8 @@ let WHITELIST: string[] = [
   '0x960b236a07cf122663c4303350609a66a7b288c0', //ANT
   '0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f', //SNX
   '0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e', //YFI
-  '0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8' // yCurv
+  '0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8', // yCurv
+  '0x81428a8047cca11177a4e15789e368d6806da376'  // EQL
 ]
 
 // minimum liquidity required to count towards tracked volume for pairs with small # of Lps
